@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paytm: secure and fast UPI payment</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .navbar {
+            height: 100px;
+            width: 100%;
+            display: flex;
+        }
+
+        .left {
+            height: 100%;
+            width: 20%;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+
+        }
+
+        .middle {
+            height: 100%;
+            width: 60%;
+            background-color: white;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            font-weight: bolder;
+            font-size: larger;
+
+
+        }
+
+        .right {
+            height: 100%;
+            width: 20%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .account {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #00baf2;
+            padding: 2px 2px 2px 20px;
+            border-radius: 50px;
+            color: white;
+            font-size: medium;
+            font-weight: bold;
+        }
+
+        .account:hover {
+            background-color: rgb(18, 18, 55);
+            color: white;
+            font-size: medium;
+            font-weight: bold;
+        }
+
+        .kyc {
+            height: 68px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #fedc26;
+            font-weight: bolder;
+            font-size: larger;
+            color: black;
+            box-shadow: 10px 10px 20px rgb(173, 133, 133);
+
+        }
+
+        .kyc1 {
+            text-decoration: none;
+            font-weight: bolder;
+            font-size: larger;
+            color: rgb(56, 56, 201);
+        }
+
+        .parent {
+            height: 600px;
+            width: 100%;
+
+
+
+        }
+
+        .child1 {
+            height: 500px;
+            width: 50%;
+            align-items: center;
+            justify-content: center;
+            display: grid;
+
+
+
+
+        }
+
+        .logo {
+            height: 80px;
+            width: 80px;
+            align-items: center;
+            margin-top: 100px;
+            background-position: center;
+
+
+        }
+
+        .head {
+            font-size: 55px;
+            font-weight: bolder;
+            font-family: inter sans-serif;
+            line-height: 65px;
+            margin-top: 0px;
+        }
+
+        .para {
+            font-size: 20px;
+            font-weight: 400;
+            width: 450px;
+            line-height: 30px;
+        }
+
+        .btn {
+            background-color: black;
+            color: white;
+            padding: 15px 24px 15px 24px;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 30px;
+
+        }
+
+        svg {
+            margin-left: 10px;
+
+        }
+
+        .child2 {
+            height: 600px;
+            width: 50%;
+            justify-content: center;
+            align-items: center;
+            display: grid;
+            margin-top: 100px;
+
+
+        }
+
+        .r1 {
+            height: 476px;
+            position: relative;
+            left: 60rem;
+            top: -40rem;
+            margin-top: 100px;
+            justify-content: space-evenly;
+            margin-left: 30px;
+            margin-right: 10px;
+        }
+
+        .recharge {
+            width: 100%;
+            background-color: #00baf2;
+            height: 300px;
+            margin-top: 40px;
+            color:white;
+            
+        }
+        .inner-section{
+            width: 70%;
+            margin: auto;
+        }
+        .heading{
+            font-size: 36px;
+            padding-top: 50px;
+            align-items: center;
+            font-weight: 700px;
+        }
+        .box{
+            display: flex;
+            justify-content: space-around;
+            padding-bottom: 50px;
+            
+            
+        }
+        .first{
+            height: 64px;
+            width: 64px;
+            
+            
+        }
+        .second{
+            height: 64px;
+            width: 64px;
+
+        }
+        .third{
+            height: 64px;
+            width: 64px;
+        }
+        .fourth{
+            height: 64px;
+            width: 64px;
+        }
+        .fifth{
+            height: 64px;
+            width: 64px;
+        }
+        .sixth{
+            height: 64px;
+            width: 64px;
+        }
+        .seventh{
+            height: 64px;
+            width: 64px;
+        }
+        .connection{
+            font-weight: 700;
+            font-family: sans-serif;
+
+        }
+        .book{
+            
+            width: 100%;
+            background-color:#0d5098;
+            height: 300px;
+            color:white;
+        }
+        .inner-logo{
+            width: 70%;
+            margin: auto;
+        }
+        .heading2{
+            font-size: 36px;
+            padding-top: 50px;
+            align-items: center;
+            font-weight: 700px;
+        }
+        .payment{
+            display: flex;
+            justify-content: space-around;
+            padding-bottom: 50px;
+
+        }
+        .A{
+            height: 64px;
+            width: 64px;
+
+        }
+        .content{
+            font-weight: 700;
+            font-family: sans-serif;
+        }
+        .instruction{
+            
+            margin-left: 100px;
+            height:1oopx;
+            width: 100%;
+            padding-top: 50px;
+        
+            
+
+        }
+        .section{
+            height: 500px;
+            width:70%;
+            display:flex;
+            border:1px solid brown;
+            
+        }
+        .ram{
+            height: 77px;
+             width: auto;
+             padding-right: 12px;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            display: grid;
+        }
+        .wallet image{
+            height: 400px;
+            width: 540px%;
+        
+    
+            display: grid;
+            margin-top: 100px;
+        }
+        
+       
+            
+        
+       
+       
+            
+            
+        
+        
+
+
+        
+       
+        
+    </style>
+</head>
+
+<body>
+    <!-- nave bar code  -->
+    <div class="navbar">
+        <div class="left">
+            <img src="./paytmlogo.svg">
+        </div>
+
+        <div class="middle">
+            <p>Paytm For Consumer</p>
+            <p>Paytm For Business</p>
+            <p>Investor Relations</p>
+            <p>Company</p>
+            <p>Career</p>
+
+        </div>
+
+        <div class="right">
+            <div class="account">Sign in
+                <img src="https://pwebassets.paytm.com/commonwebassets/paytmweb/header/images/logoutImg.svg" /><br>
+                
+            </div>
+        </div>
+
+    </div>
+    <!-- section 2 -->
+    <div class="kyc">
+        <p>We have received approval from NPCI as a Third-Party Application Provider (TPAP).<a href class="kyc1
+        ">Click to know more</a></p>
+
+    </div>
+    <!-- section 3 -->
+    <div class="parent">
+        <div class="child1">
+
+            <img class="logo" src="./pay.avif">
+
+
+            <div>
+                <pre class="head">India's Most-loved 
+Payments App</pre>
+                <p class="para">Recharge & pay bills, book flights & movie tickets,
+                    open a savings account, invest in stocks & mutual
+                    funds, and do a lot more.</p>
+                <button class="btn">Download Paytm App <span><svg width="14" height="16" viewBox="0 0 14 16" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M11.6593 15.3557C10.7589 16.1979 9.76546 16.0666 8.81854 15.6695C7.81182 15.2644 6.89149 15.2388 5.82828 15.6695C4.50426 16.2203 3.80155 16.0602 3.00415 15.3557C-1.49786 10.8883 -0.833353 4.08311 4.28331 3.82691C5.52427 3.89096 6.39311 4.48821 7.12406 4.53785C8.21052 4.32489 9.25047 3.71483 10.4133 3.79489C11.8105 3.90377 12.8554 4.43538 13.5531 5.3913C10.6791 7.05657 11.3603 10.7073 14 11.7321C13.4717 13.0691 12.7939 14.3902 11.6576 15.3669L11.6593 15.3557ZM7.02439 3.77888C6.88982 1.79336 8.55939 0.160122 10.4798 0C10.7439 2.28974 8.32017 4.00305 7.02439 3.77888Z"
+                                fill="white"></path>
+                        </svg></span>
+                    <span><svg width="14" height="16" viewBox="0 0 14 16" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0.088012 0.571735C0.0310801 0.726729 0 0.910797 0 1.121V14.8786C0 15.0894 0.0311427 15.2736 0.0881839 15.4286L7.32808 7.9997L0.088012 0.571735ZM0.590122 15.9564C0.85223 16.0466 1.18264 15.9995 1.54068 15.7912L10.0736 10.8165L7.83627 8.52109L0.590122 15.9564ZM10.7221 10.4391L13.3647 8.8987C14.2118 8.40415 14.2118 7.59609 13.3647 7.10217L10.7211 5.561L8.34443 7.99966L10.7221 10.4391ZM10.073 5.18317L1.54068 0.209061C1.18252 0.000250885 0.852017 -0.0466058 0.589868 0.0438429L7.83624 7.47828L10.073 5.18317Z"
+                                fill="white"></path>
+                        </svg></span></button>
+
+
+
+        
+        </div>
+    </div>
+    <div class="child2">
+        <img class="r1" src="https://assetscdn1.paytm.com/images/catalog/view_item/850762/1706796536129.png" />
+
+    </div>
+    </div>
+    <div class="recharge">
+        <div class="inner-section">
+            <h1 class="heading">Recharge & Pay Bills on Paytm.</h1>
+            <div class="box">
+                <div>
+                    <img class="first"
+                    src="https://assetscdn1.paytm.com/images/catalog/view_item/733299/1626251017535.png"/>
+                    <p  class="connection">Recharge <BR>Prepaid <br>Mobile ></p>
+                   
+                </div>
+                <div>
+                    <img class="second"
+                    src="https://assetscdn1.paytm.com/images/catalog/view_item/733308/1626251043534.png"/>
+                    <p  class="connection">Pay <BR> Electricity <br>Bill ></p>
+                    
+
+                </div>
+                <div>
+                    <img class="third"
+                    src="https://assetscdn1.paytm.com/images/catalog/view_item/733311/1626251101045.png"/>
+                    <p class="connection">Recharge <br>DTH<br>Connection ></p>
+                    
+                </div>
+                <div>
+                    <img class="fourth"
+                    src="https://assetscdn1.paytm.com/images/catalog/view_item/733307/1626251127863.png"/>
+                    <P  class="connection" >Book <br> Gas <br> Cylinder ></P>
+                    
+                </div>
+                <div>
+                    <img class="fifth"
+                    src="https://assetscdn1.paytm.com/images/catalog/view_item/1269194/1672827522093.png"/>
+                    <p  class="connection">Pay <br>Broadband & <br> Landline Bill ></p>
+                    
+
+                </div>
+                <div>
+                    <img class="sixth"
+                    src="https://assetscdn1.paytm.com/images/catalog/view_item/1269198/1672828917034.png"/>
+                    <p  class="connection">Pay <br> Education <br>Fee ></p>
+                </div>
+                <div>
+                    <img class="seventh"
+                    src="https://assetscdn1.paytm.com/images/catalog/view_item/757701/1626268580682.png"/>
+                    <p  class="connection">All <br> Payment <br> Services ></p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="book">
+        <div class="inner-logo">
+            <h1 class="heading2">Book & Buy on Paytm.</h1>
+            <div class="payment">
+                <div>
+                    <img class="A"
+                    src="https://assetscdn1.paytm.com/images/catalog/view_item/733295/1626259710574.png"/>
+                    <P class="content">Movie <br> Tickets ></P>
+                </div>
+                <div>
+                    <img class="A"
+                    src="https://assetscdn1.paytm.com/images/catalog/view_item/733296/1626259884425.png"/>
+                    <P class="content">Flight <br>Tickets ></P>
+                </div> 
+                <div>
+                    <img class="A"
+                    src="https://assetscdn1.paytm.com/images/catalog/view_item/729996/1626260477699.png"/>
+                    <P class="content">Bus <br> Tickets ></P>
+                </div>
+                <div>
+                    <img class="A"
+                    src="https://assetscdn1.paytm.com/images/catalog/view_item/729997/1696910636390.png"/>
+                    <P class="content">Train<br>Tickets ></P>
+                </div>
+                <div>
+                    <img class="A"
+                    src="https://assetscdn1.paytm.com/images/catalog/view_item/729998/1666185237748.png"/>
+                    <P class="content"> Buy <br> Insurance ></P>
+                </div>
+                <div>
+                    <img class="A"
+                    src="https://assetscdn1.paytm.com/images/catalog/view_item/729999/1626259968563.png"/>
+                    <P class="content">International<br>Flight ></P>
+                </div>
+                <div>
+                    <img class="A"
+                    src="https://assetscdn1.paytm.com/images/catalog/view_item/730001/1626450848003.png"/>
+                    <P class="content">Invest<br> in Stock ></P>
+                </div>
+                
+                
+                
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="instruction">
+        <h1 class="1st">Paytm Payment Instruments</h1>
+
+    </div>
+    <div class="section">
+        <div>
+            <img class="ram"
+            src="https://assetscdn1.paytm.com/images/catalog/view/307185/1617861564011.png"/>
+
+        </div>
+
+
+        <div>
+            <img class="wallet image"
+            src="https://assetscdn1.paytm.com/images/catalog/view_item/728701/1618577020961.png"/>
+        </div>
+        
+    </div>
+    
+
+
+</body>
+
+</html>
